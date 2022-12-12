@@ -22,18 +22,23 @@ void setup() {
 }//End Setup
 void draw() {
   //Assginment #2: OS Level Mouse Click and Splash Screen
-  if ( OS_on==true && splashScreenStart==false) splashScreen(); //OS Level Mouse Click
-  if( splashScreenStart=true) homeScreen();
+  if ( OS_on==true && splashScreenStart==false ) splashScreen(); //OS Level Mouse Click
+  if ( splashScreenStart==true ) homeScreen();
   //
-}//End Draw
-void keyPressed() {//Splash Screen SPACE Bar
-if (OS_on=true && key==' ') {
-splashScreenStart=true;
- backgroundImage();
- }
- //End Splash Screen SPACE Bar
+}//End draw
+//
+void keyPressed() {
+  //Splash Screen SPACE Bar
+  if ( OS_on==true && key==' ' ) {
+    splashScreenStart = true;
+    backgroundImage();
+  }//End Splash Screen SPACE Bar
+  //
 }//End keyPressed
+//
 void mousePressed() {
   //OS Level Mouse Click
   if ( OS_on==false ) OS_on=true;//End OS Level Mouse Click
 }//End mousePressed
+//
+//End MAIN Program
