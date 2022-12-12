@@ -1,6 +1,6 @@
 //Global Variables
 int appWidth, appHeight, smallerDimension, largerDimension;
-Boolean OS_on=false;
+Boolean OS_on=false, splashScreenStart=false;
 /* Night Mode Comment
  Purple not for Night Mode, full BLUE
  resetDefaultInk is WHITE, not Night Mode Friendly, full BLUE
@@ -16,15 +16,22 @@ void setup() {
   display();
   //Display Algorithm will populate smaller and larger dimensions
   population();
+  imagePopulation();
   textSetup();
   println("Smaller Dimension is", smallerDimension, "Larger Dimension is", largerDimension);
 }//End Setup
 void draw() {
   //Assginment #2: OS Level Mouse Click and Splash Screen
-  if ( OS_on==true ) splashScreen(); //OS Level Mouse Click
+  if ( OS_on==true && splashScreenStart==false) splashScreen(); //OS Level Mouse Click
+  if( splashScreenStart=true) homeScreen();
   //
 }//End Draw
-void keyPressed() {
+void keyPressed() {//Splash Screen SPACE Bar
+if (OS_on=true && key==' ') {
+splashScreenStart=true;
+ backgroundImage();
+ }
+ //End Splash Screen SPACE Bar
 }//End keyPressed
 void mousePressed() {
   //OS Level Mouse Click
