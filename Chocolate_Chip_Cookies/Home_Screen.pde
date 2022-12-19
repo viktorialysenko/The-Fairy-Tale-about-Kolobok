@@ -1,10 +1,13 @@
 color white=#FFFFFF;
 int backgroundX, backgroundY, backgroundWidth, backgroundHeight;
+float quitX, quitY, quitWidth, quitHeight;
+float quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight;
+float ptDiameter, rectWidth, rectHeight;
+float pt1X, pt1Y, pt2X, pt2Y, pt3X, pt3Y, pt4X, pt4Y, pt5X, pt5Y, pt6X, pt6Y, pt7X, pt7Y, pt8X, pt8Y;
+float pt9X, pt9Y, pt10X, pt10Y, pt11X, pt11Y, pt12X, pt12Y, pt13X, pt13Y, pt14X, pt14Y, pt15X, pt15Y, pt16X, pt16Y;
 int tintDayMode=255, tintDayModeOpacity=50;
 int tintRed=64, tintGreen=64,tintBlue=40,tintModeOpacity=85;
-void homeScreen() {
-  println ( "Arrived At HomeScreen");//Testing For SplashScreenn Start Button
-  /* Home Screen Expectations
+ /* Home Screen Expectations
    - Background image using tint()
    - 9 evenly spaced rectangles, Assignment #3
    - Quit Button and Reset Button (Splash Screen Start Button)
@@ -13,6 +16,30 @@ void homeScreen() {
    - See Case Study
    - Note: must have one image with aspect ratio
    */
+void homeScreen() {
+  println ( "Arrived At HomeScreen");
+  //Rectangles
+  rect(pt1X, pt1Y, rectWidth, rectHeight);
+  rect(pt2X, pt2Y, rectWidth, rectHeight);
+  rect(pt3X, pt3Y, rectWidth, rectHeight);
+  rect(pt5X, pt5Y, rectWidth, rectHeight);
+  rect(pt6X, pt6Y, rectWidth, rectHeight);
+  rect(pt7X, pt7Y, rectWidth, rectHeight);
+  rect(pt9X, pt9Y, rectWidth, rectHeight);
+  rect(pt10X, pt10Y, rectWidth, rectHeight);
+  rect(pt11X, pt11Y, rectWidth, rectHeight);
+  fill(white);
+  //Boxes
+  box5(); 
+  /*box3();
+  box6();
+  box9();
+  box8();
+  box7();
+  box4();
+  box1();
+ box2();*/
+  //quitButtonHoverOver();
 }//End HomeScreen
 //
 void backgroundWhiteScreen() {

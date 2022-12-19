@@ -7,11 +7,11 @@ void display(){
   //
   String ls="Landscape or Square", p="portrait", DO="Display Orientation";
   //
-  if ( appWidth < appHeight ) { //Declaring Landscape & square
+  if ( appWidth < appHeight ) {
     println("Bruh, turn your phone");
   } else {
     println("Display: Good to Go");}
-    if ( appWidth > displayWidth ) { //Fitting CANVAS into Monitor Display
+    if ( appWidth > displayWidth ) {
       appWidth=0;
       appHeight=0;
       println("STOP, is broken");
@@ -27,9 +27,5 @@ void display(){
       appHeight=0;
         println("Bruh, turn your phone");
     }
-//Output #1: Console confirms CANVAS will fit in the monitor
-//Output #2: Console confirms display orientation(landskape-square or portrait)
-//Output #3: Console confirms dimension sizes (smaller and larger)
-//Output #4: if error with any above , program will exit or be broken
 }//End display
 //End Display and Orientation Subprogram
