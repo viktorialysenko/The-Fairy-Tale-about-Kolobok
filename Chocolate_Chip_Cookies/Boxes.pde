@@ -7,7 +7,10 @@ String quit= "Quit";
 String restart= "Restart";
 
 void box5() {
-  image(backgroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
+  image(backgroundImage5, pt6X, pt6Y, rectWidth, rectHeight);
+  startButton();
+  restartButton();
+  nightModeButton();
  // box5Text();
 //button1();
   line(pt6X, pt6Y, pt7X, pt7Y); //because the pic overlaps the border

@@ -25,7 +25,12 @@ void population() {
   pt5Y = pt6Y = pt7Y = pt8Y = appHeight*1/3;
   pt9Y = pt10Y = pt11Y = pt12Y = appHeight*2/3;
   pt13Y = pt14Y = pt15Y = pt16Y= appHeight;
-  //
+  //Buttons
+  startButtonX=pt10X+rectWidth*1/15;
+  startButtonY=pt10Y-rectHeight*1/8;
+  button1Width=rectWidth*1/4;
+  button1Height = rectHeight*1/10;
+  
 }//End population
 //
 //End Population Subprogram

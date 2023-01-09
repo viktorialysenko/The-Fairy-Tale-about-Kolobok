@@ -9,7 +9,7 @@ color purple=#FF00FF, resetDefaultInk=#FFFFFF;
 //
 //
 void setup() {
-  size(1200, 1000);
+  size(1400, 1100);
   appWidth = width;
   appHeight = height;
   display();
