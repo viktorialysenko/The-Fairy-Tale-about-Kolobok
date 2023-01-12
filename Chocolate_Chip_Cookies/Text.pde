@@ -1,4 +1,4 @@
-String spaceBar = "Press the SPACE BAR to continue", name="The Fairy Tale about Kolobok", startButton="Start";
+String spaceBar = "Press the SPACE BAR to continue", name="The Fairy Tale about Kolobok", startButton="Start", box3Text="There once lived a little round bun";
 PFont constantia;
 color green= #093B0E;
 //
@@ -32,5 +32,13 @@ void startButtonText() {
    fill(black);
   text(startButton, startButtonX, startButtonY, button1Width, button1Height);
   fill(white);
+}
+void box3Text() {
+  textAlign (CENTER, CENTER);
+  textFont(constantia, 55);
+   fill(green);
+  text(box3Text, pt3X, pt3Y, rectWidth, rectHeight-button1Height);
+  textFont(constantia);
+   fill(white);
 }
 //End Text Subprogram

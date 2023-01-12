@@ -23,7 +23,7 @@ void box3() {
     image(backgroundImage3, pt3X, pt3Y, rectWidth, rectHeight);
     line(pt3X, pt3Y, pt4X, pt4Y);
     line(pt3X, pt3Y, pt7X, pt7Y);
-   // box3Text();
+   box3Text();
    // button3();
   }
 }
