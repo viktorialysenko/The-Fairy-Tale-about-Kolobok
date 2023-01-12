@@ -1,4 +1,7 @@
-String spaceBar = "Press the SPACE BAR to continue", name="The Fairy Tale about Kolobok", startButton="Start", box3Text="There once lived a little round bun";
+String spaceBar = "Press the SPACE BAR to continue", name="The Fairy Tale about Kolobok", startButton="Start", box3Text="There once lived a little round bun called Kolobok. He escaped from his house, because he didn't want to be eaten.";
+String box9Text="He was chased by a hare, bear, and wolf, but saved himself by singing a song.", box4Text="Everything was going well until he met a fox. She said  to Kolobok:'Hop onto my tongue, so I can hear you better'";
+String box11Text="Little Kolobok jumped onto the Fox's tongue and began to sing";
+String box2Text="But before it could go on, the Fox opened her mouth and -snap!- she gobbled it up. The fairy tale teaches , that one can't trust those who are unknown, especially foxes.";
 PFont constantia;
 color green= #093B0E;
 //
@@ -35,7 +38,7 @@ void startButtonText() {
 }
 void box3Text() {
   textAlign (CENTER, CENTER);
-  textFont(constantia, 55);
+  textFont(constantia, 40);
    fill(green);
   text(box3Text, pt3X, pt3Y, rectWidth, rectHeight-button1Height);
   textFont(constantia);

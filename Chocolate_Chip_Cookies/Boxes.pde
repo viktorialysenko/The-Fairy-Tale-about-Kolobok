@@ -19,7 +19,16 @@ void box5() {
   line(pt10X, pt10Y, pt11X, pt11Y); //the button overlaps the lines too
 }
 void box3() {
-  if (box3 == true) {
+ if (box3 == true) {
+    image(backgroundImage3, pt3X, pt3Y, rectWidth, rectHeight);
+    line(pt3X, pt3Y, pt4X, pt4Y);
+    line(pt3X, pt3Y, pt7X, pt7Y);
+   box3Text();
+   //button3();
+  }
+}
+void box6() {
+  if (box6 == true) {
     image(backgroundImage3, pt3X, pt3Y, rectWidth, rectHeight);
     line(pt3X, pt3Y, pt4X, pt4Y);
     line(pt3X, pt3Y, pt7X, pt7Y);

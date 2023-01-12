@@ -6,16 +6,16 @@ float ptDiameter, rectWidth, rectHeight;
 float pt1X, pt1Y, pt2X, pt2Y, pt3X, pt3Y, pt4X, pt4Y, pt5X, pt5Y, pt6X, pt6Y, pt7X, pt7Y, pt8X, pt8Y;
 float pt9X, pt9Y, pt10X, pt10Y, pt11X, pt11Y, pt12X, pt12Y, pt13X, pt13Y, pt14X, pt14Y, pt15X, pt15Y, pt16X, pt16Y;
 int tintDayMode=255, tintDayModeOpacity=50;
-int tintRed=255, tintGreen=255,tintBlue=255,tintModeOpacity=140;
- /* Home Screen Expectations
-   - Background image using tint()
-   - 9 evenly spaced rectangles, Assignment #3
-   - Quit Button and Reset Button (Splash Screen Start Button)
-   - In each: image, text, 2D Shape, Button
-   - Narrative through the 9 rectangles
-   - See Case Study
-   - Note: must have one image with aspect ratio
-   */
+int tintRed=255, tintGreen=255, tintBlue=255, tintModeOpacity=140;
+/* Home Screen Expectations
+ - Background image using tint()
+ - 9 evenly spaced rectangles, Assignment #3
+ - Quit Button and Reset Button (Splash Screen Start Button)
+ - In each: image, text, 2D Shape, Button
+ - Narrative through the 9 rectangles
+ - See Case Study
+ - Note: must have one image with aspect ratio
+ */
 void homeScreen() {
   println ( "Arrived At HomeScreen");
   //Rectangles
@@ -30,29 +30,30 @@ void homeScreen() {
   rect(pt11X, pt11Y, rectWidth, rectHeight);
   fill(white);
   //Boxes
-  
-  box5(); 
-  /*box3();
-  box6();
-  box9();
-  box8();
-  box7();
-  box4();
-  box1();
- box2();*/
-  //quitButtonHoverOver();
-}//End HomeScreen
-//
-void backgroundWhiteScreen() {
-  fill(white);
-  noStroke();
-  rect(backgroundX, backgroundY, backgroundWidth, backgroundHeight);
-  strokeWeight(1);//Reset
-  fill(1);//Reset
-}//End BackgroundWhiteScreen
-void backgroundImage () {
-   backgroundWhiteScreen();
-   tint(tintRed, tintGreen,tintBlue,tintModeOpacity);//Night Mode, see ternary Operator
-   image(backgroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
-}//End backgroundImage
-//End HomeScreen SubProgram
+  if ( nightMode==true ) {
+   tint(64, 64, 64, 85); }else { tint(tintRed, tintGreen, tintBlue, tintModeOpacity);};
+      box5(); 
+    box3();
+    /* box6();
+     box9();
+     box8();
+     box7();
+     box4();
+     box1();
+     box2();*/
+    //quitButtonHoverOver();
+  }//End HomeScreen
+  //
+  void backgroundWhiteScreen() {
+    fill(white);
+    noStroke();
+    rect(backgroundX, backgroundY, backgroundWidth, backgroundHeight);
+    strokeWeight(1);//Reset
+    fill(1);//Reset
+  }//End BackgroundWhiteScreen
+  void backgroundImage () {
+    backgroundWhiteScreen();
+    tint(tintRed, tintGreen, tintBlue, tintModeOpacity);//Night Mode, see ternary Operator
+    image(backgroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
+  }//End backgroundImage
+  //End HomeScreen SubProgram

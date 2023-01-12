@@ -1,7 +1,7 @@
 //Global Variables
 int appWidth, appHeight, smallerDimension, largerDimension;
 Boolean OS_on=false, splashScreenStart=false, nightMode=false;
-Boolean box3=false;
+Boolean box3=false, box6=false;
 PImage backgroundImage, backgroundImage5, backgroundImage3;
 /* Night Mode Comment
  Purple not for Night Mode, full BLUE
@@ -24,7 +24,6 @@ void draw() {
   if ( OS_on==true && splashScreenStart==false ) splashScreen(); //OS Level Mouse Click
   if ( splashScreenStart==true ) homeScreen();
   //
-  
 }//End draw
 //
 void keyPressed() {
@@ -54,7 +53,18 @@ void mousePressed() {
   if ( OS_on==false ) OS_on=true;//End OS Level Mouse Click
   if ( splashScreenStart==true && mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) exit();
   //
-   if (mouseX>=startButtonX && mouseX<=startButtonX+button1Width && mouseY>=startButtonY && mouseY<=startButtonY+button1Height) box3 = true;
+  if (mouseX>=startButtonX && mouseX<=startButtonX+button1Width && mouseY>=startButtonY && mouseY<=startButtonY+button1Height) box3 = true;
+  //if (mouseX>=restartButtonX && mouseX<=restartButtonX+button1Width && mouseY>=restartButtonY && mouseY<=restartButtonY+button1Height) homeScreen();
+  if (mouseX>=startButtonX && mouseX<=startButtonX+button1Width && mouseY>=startButtonY && mouseY<=startButtonY+button1Height) box3 = true;
+  if (mouseX>=nightModeButtonX && mouseX<=nightModeButtonX+button1Width && mouseY>=nightModeButtonY && mouseY<=nightModeButtonY+button1Height){
+    if ( nightMode==true ) { 
+      nightMode=false;
+      homeScreen();
+    } else { 
+      nightMode=true;
+     homeScreen();
+    }
+  }
 }//End mousePressed
 //
 //End MAIN Program
