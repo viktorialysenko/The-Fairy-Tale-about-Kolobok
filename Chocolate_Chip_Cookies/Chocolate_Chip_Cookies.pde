@@ -65,6 +65,7 @@ void mousePressed() {
      homeScreen();
     }
   }
+   if (mouseX>=button3X && mouseX<=button3X+nextButtonWidth && mouseY>=button3Y && mouseY<=button3Y+nextButtonHeight) box6 = true;
 }//End mousePressed
 //
 //End MAIN Program

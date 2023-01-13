@@ -34,6 +34,10 @@ void population() {
   restartButtonY=startButtonY;
   nightModeButtonX=restartButtonX+rectWidth*1/3.5;
   nightModeButtonY=restartButtonY;
+  nextButtonWidth=button1Width;
+  nextButtonHeight=button1Height;
+  button3X=pt8X-nextButtonWidth;
+  button3Y=pt8Y-nextButtonHeight;
 }//End population
 //
 //End Population Subprogram

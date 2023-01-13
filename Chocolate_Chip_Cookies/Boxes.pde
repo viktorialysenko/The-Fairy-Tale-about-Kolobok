@@ -24,15 +24,15 @@ void box3() {
     line(pt3X, pt3Y, pt4X, pt4Y);
     line(pt3X, pt3Y, pt7X, pt7Y);
    box3Text();
-   //button3();
+   button3();
   }
 }
 void box6() {
   if (box6 == true) {
-    image(backgroundImage3, pt3X, pt3Y, rectWidth, rectHeight);
+    image(backgroundImage3, pt7X, pt7Y, rectWidth, rectHeight);
     line(pt3X, pt3Y, pt4X, pt4Y);
     line(pt3X, pt3Y, pt7X, pt7Y);
-   box3Text();
-   // button3();
+  // box3Text();
+ //  button3();
   }
 }
