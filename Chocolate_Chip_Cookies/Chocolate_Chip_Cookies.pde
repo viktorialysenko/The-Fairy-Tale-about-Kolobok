@@ -2,7 +2,7 @@
 int appWidth, appHeight, smallerDimension, largerDimension;
 Boolean OS_on=false, splashScreenStart=false, nightMode=false;
 Boolean box3=false, box6=false;
-PImage backgroundImage, backgroundImage5, backgroundImage3;
+PImage backgroundImage, backgroundImage5, backgroundImage3, kolobok;
 /* Night Mode Comment
  Purple not for Night Mode, full BLUE
  resetDefaultInk is WHITE, not Night Mode Friendly, full BLUE

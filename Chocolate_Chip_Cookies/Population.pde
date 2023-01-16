@@ -38,6 +38,21 @@ void population() {
   nextButtonHeight=button1Height;
   button3X=pt8X-nextButtonWidth;
   button3Y=pt8Y-nextButtonHeight;
+ //
+ //Kolobok
+ kolobokDiameter=130;
+ noseRadius=15;
+ kolobok6X= pt11X+rectWidth*1/3;
+ kolobok6Y=pt11Y-90;
+ eye1X=kolobok6X-rectWidth*1/16;
+ eye1Y=kolobok6Y-rectHeight*1/13;
+ eye2X=kolobok6X+rectWidth*1/16;
+ eye2Y=eye1Y;
+ eyeRadius=29;
+
+ 
+ 
+ 
 }//End population
 //
 //End Population Subprogram

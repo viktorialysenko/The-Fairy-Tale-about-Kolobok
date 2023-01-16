@@ -5,6 +5,7 @@ float quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quit
 float ptDiameter, rectWidth, rectHeight;
 float pt1X, pt1Y, pt2X, pt2Y, pt3X, pt3Y, pt4X, pt4Y, pt5X, pt5Y, pt6X, pt6Y, pt7X, pt7Y, pt8X, pt8Y;
 float pt9X, pt9Y, pt10X, pt10Y, pt11X, pt11Y, pt12X, pt12Y, pt13X, pt13Y, pt14X, pt14Y, pt15X, pt15Y, pt16X, pt16Y;
+float kolobok6X, kolobok6Y, kolobokDiameter, eye1X,eye1Y, eye2X, eye2Y, eyeRadius, noseRadius;
 int tintDayMode=255, tintDayModeOpacity=50;
 int tintRed=255, tintGreen=255, tintBlue=255, tintModeOpacity=140;
 /* Home Screen Expectations
@@ -32,10 +33,10 @@ void homeScreen() {
   //Boxes
   if ( nightMode==true ) {
    tint(64, 64, 64, 85); }else { tint(tintRed, tintGreen, tintBlue, tintModeOpacity);};
-      box5(); 
+    box5(); 
     box3();
-    /* box6();
-     box9();
+    box6();
+    /* box9();
      box8();
      box7();
      box4();
