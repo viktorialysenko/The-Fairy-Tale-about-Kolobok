@@ -38,17 +38,25 @@ void population() {
   nextButtonHeight=button1Height;
   button3X=pt8X-nextButtonWidth;
   button3Y=pt8Y-nextButtonHeight;
+  button6X=pt12X-nextButtonWidth;
+  button6Y=pt12Y-nextButtonHeight;
+  button9X=pt16X-nextButtonWidth;
+  button9Y=pt16Y-nextButtonHeight;
+  button8X=pt15X-nextButtonWidth;
+  button8Y=pt15Y-nextButtonHeight;
+
  //
  //Kolobok
- kolobokDiameter=130;
- noseRadius=15;
- kolobok6X= pt11X+rectWidth*1/3;
- kolobok6Y=pt11Y-90;
- eye1X=kolobok6X-rectWidth*1/16;
- eye1Y=kolobok6Y-rectHeight*1/13;
- eye2X=kolobok6X+rectWidth*1/16;
- eye2Y=eye1Y;
- eyeRadius=29;
+kolobok6Y=pt7Y+1/5.4*rectHeight;
+kolobok6X=pt7X-rectWidth*1/5;
+//
+kolobok8X=pt10X-rectWidth*1/4;
+kolobok8Y=pt10Y+1/5.4*rectHeight;
+//rabbit
+rabbitX=pt10X+rectWidth*1/1.8;
+rabbitY=pt10Y+rectHeight*1/2.7;
+
+
 
  
  

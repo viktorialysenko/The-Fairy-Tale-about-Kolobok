@@ -33,15 +33,37 @@ void box6() {
     image(backgroundImage3, pt7X, pt7Y, rectWidth, rectHeight);
     line(pt7X, pt7Y, pt11X, pt11Y);
    line(pt11X, pt11Y, pt12X, pt12Y);
-   fill(yellow);
-   circle(kolobok6X, kolobok6Y, kolobokDiameter);  
-   fill(black);
-   ellipse(eye1X,eye1Y,eyeRadius,eyeRadius);
-   ellipse(eye2X,eye2Y,eyeRadius,eyeRadius);
-   ellipse( kolobok6X, kolobok6Y, noseRadius, noseRadius);
-    line(eye1X,eye1Y+rectHeight*1/12,eye2X, eye2Y+rectHeight*1/12);
-   fill(white);
-   
- //  button3();
+    tint(256, 256, 256, 256);
+   image(kolobok, kolobok6X, kolobok6Y, rectWidth, rectHeight );
+  button6();
   }
+   if ( nightMode==true ) {
+   tint(64, 64, 64, 85); }else { tint(tintRed, tintGreen, tintBlue, tintModeOpacity);};
+}
+   void box9() {
+ if (box9 == true) {
+    image(backgroundImage9, pt11X, pt11Y, rectWidth, rectHeight);
+    line(pt11X, pt11Y, pt12X, pt12Y);
+    line(pt11X, pt11Y, pt15X, pt15Y);  
+    line(pt15X, pt15Y, pt16X, pt16Y);
+    box9Text();
+    button9();
+  }
+}
+void box8() {
+ if (box8 == true) {
+    image(backgroundImage9, pt10X, pt10Y, rectWidth, rectHeight);
+    line(pt10X, pt10Y, pt11X, pt11Y);
+    line(pt10X, pt10Y, pt14X, pt14Y);  
+    line(pt11X, pt11Y, pt15X, pt15Y);
+    button8();
+        tint(256, 256, 256, 256);
+    image(kolobok, kolobok8X, kolobok8Y, rectWidth, rectHeight );
+    image(rabbit, rabbitX, rabbitY, rectWidth*1/2, rectHeight*1/2 );
+    image(music, kolobok8X+rectWidth*1/2, kolobok8Y+rectWidth*1/4.8, rectWidth*1/3, rectHeight*1/3 );
+    
+    
+  }
+  if ( nightMode==true ) {
+   tint(64, 64, 64, 85); }else { tint(tintRed, tintGreen, tintBlue, tintModeOpacity);};
 }
