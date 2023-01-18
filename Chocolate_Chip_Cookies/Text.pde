@@ -1,8 +1,5 @@
 String spaceBar = "Press the SPACE BAR to continue", name="The Fairy Tale about Kolobok", startButton="Start", box3Text="There once lived a little round bun called Kolobok. He escaped from his house, because he didn't want to be eaten.";
 String restartButton = "Restart", nightModeButton="Night Mode";
-String box9Text="He was chased by a hare, a bear, and a wolf, but saved himself by singing a song.", box4Text="Everything was going well until he met a fox. She said to the Kolobok:'Hop onto my tongue, so I can hear you better'";
-String box11Text="Little Kolobok jumped onto the Fox's tongue and began to sing", buttonText="Next";
-String box2Text="But before it could go on, the Fox opened her mouth and -snap!- she gobbled it up. The fairy tale teaches , that one can't trust those who are unknown, especially foxes.";
 PFont constantia, arial;
 color green= #093B0E;
 //
@@ -101,4 +98,63 @@ void buttonText8() {
   textFont(constantia);
    fill(white);
 }
-//End Text Subprogram
+void buttonText7(){
+textAlign (CENTER, CENTER);
+  textFont(constantia, 25);
+   fill(green);
+  text(buttonText, button7X, button7Y, button1Width, button1Height);
+  textFont(constantia);
+   fill(white);
+ }
+   void box4Text() {
+  textAlign (CENTER, CENTER);
+  textFont(constantia, 36);
+   fill(green);
+  text(box4Text, pt5X, pt5Y, rectWidth, rectHeight-button1Height);
+  textFont(constantia);
+   fill(white);
+}
+void buttonText4(){
+textAlign (CENTER, CENTER);
+  textFont(constantia, 25);
+   fill(green);
+  text(buttonText, button4X, button4Y, button1Width, button1Height);
+  textFont(constantia);
+   fill(white);
+ }
+
+void buttonText1(){
+  textAlign (CENTER, CENTER);
+  textFont(constantia, 25);
+   fill(green);
+  text(buttonText, button1X, button1Y, button1Width, button1Height);
+  textFont(constantia);
+   fill(white);
+ }
+ void box1Text() {
+  textAlign (CENTER, CENTER);
+  textFont(constantia, 36);
+   fill(green);
+  text(box1Text, pt1X, pt1Y, rectWidth, rectHeight*1/2);
+  textFont(constantia);
+   fill(white);
+}
+void box2Text() {
+  textAlign (CENTER, CENTER);
+  textFont(constantia, 29);
+   fill(green);
+  text(box2Text, pt2X, pt2Y, rectWidth, rectHeight-button1Height);
+  textFont(constantia);
+   fill(white);
+}
+void buttonText2(){
+textAlign (CENTER, CENTER);
+  textFont(constantia, 25);
+   fill(green);
+  text(endText, button2X, button2Y, button1Width, button1Height);
+  textFont(constantia);
+   fill(white);
+ }
+
+ //End Text Subprogram
+ 

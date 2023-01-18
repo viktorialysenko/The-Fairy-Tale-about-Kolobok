@@ -1,7 +1,3 @@
-String box6Text= "“I am so clever that sometimes I don't understand a single word of what I am saying.” -Oscar Wilde";
-String box1Text= "“I'm not stupid. I'm just too lazy to show how smart I am” -Oreiki Houtarou, Hyouka";
-String box8Text= "The buttons below change the colour of the eyes in the box to the right:";
-String clickMe= "Click Me!";
 String start= "Start";
 String quit= "Quit";
 String restart= "Restart";
@@ -38,7 +34,7 @@ void box6() {
   button6();
   }
    if ( nightMode==true ) {
-   tint(64, 64, 64, 85); }else { tint(tintRed, tintGreen, tintBlue, tintModeOpacity);};
+   tint(110, 110, 89, 180); }else { tint(tintRed, tintGreen, tintBlue, tintModeOpacity);};
 }
    void box9() {
  if (box9 == true) {
@@ -60,10 +56,58 @@ void box8() {
         tint(256, 256, 256, 256);
     image(kolobok, kolobok8X, kolobok8Y, rectWidth, rectHeight );
     image(rabbit, rabbitX, rabbitY, rectWidth*1/2, rectHeight*1/2 );
-    image(music, kolobok8X+rectWidth*1/2, kolobok8Y+rectWidth*1/4.8, rectWidth*1/3, rectHeight*1/3 );
-    
-    
+    image(music, kolobok8X+rectWidth*1/2, kolobok8Y+rectHeight*1/5, rectWidth*1/3, rectHeight*1/3 );
   }
   if ( nightMode==true ) {
-   tint(64, 64, 64, 85); }else { tint(tintRed, tintGreen, tintBlue, tintModeOpacity);};
+   tint(110, 110, 89, 180); }else { tint(tintRed, tintGreen, tintBlue, tintModeOpacity);};
+}
+void box7() {
+ if (box7 == true) {
+    image(backgroundImage7, pt9X, pt9Y, rectWidth, rectHeight);
+    line(pt9X, pt9Y, pt10X, pt10Y);
+    line(pt10X, pt10Y, pt14X, pt14Y);  
+    button7();
+        tint(256, 256, 256, 256);
+    image(kolobok, kolobok7X, kolobok7Y, rectWidth, rectHeight );
+     image(wolf, wolfX, wolfY, rectWidth*1/3, rectHeight*1/3 );
+    image(bear, bearX,bearY, rectWidth*1/3, rectHeight*1/2 );
+    image(music, kolobok7X+rectWidth*1/2, kolobok7Y+rectHeight*1/5, rectWidth*1/3, rectHeight*1/3 );
+  }
+  if ( nightMode==true ) {
+   tint(110, 110, 89, 180); }else { tint(tintRed, tintGreen, tintBlue, tintModeOpacity);};
+}
+ void box4() {
+ if (box4 == true) {
+    image(backgroundImage7, pt5X, pt5Y, rectWidth, rectHeight);
+    line(pt5X, pt5Y, pt6X, pt6Y);
+    line(pt6X, pt6Y, pt10X, pt10Y);  
+    line(pt9X, pt9Y, pt10X, pt10Y);
+    box4Text();
+    button4();
+  }
+}
+
+void box1() {
+ if (box1 == true) {
+    image(backgroundImage1, pt1X, pt1Y, rectWidth, rectHeight);
+    box1Text();
+        tint(256, 256, 256, 256);
+    image(pic1, kolobok1X, kolobok1Y+rectHeight*1/2 , rectWidth, rectHeight*1/2 );
+    image(music, kolobok1X+rectWidth*1/4, kolobok1Y+rectHeight*1/2, rectWidth*1/4, rectHeight*1/4 );
+     line(pt5X, pt5Y, pt6X, pt6Y);
+    line(pt2X, pt2Y, pt6X, pt6Y);  
+        button1();
+  }
+  if ( nightMode==true ) {
+   tint(110, 110, 89, 180); }else { tint(tintRed, tintGreen, tintBlue, tintModeOpacity);};
+}
+void box2() {
+ if (box2 == true) {
+    image(backgroundImage1, pt2X, pt2Y, rectWidth, rectHeight);
+    line(pt6X, pt6Y, pt7X, pt7Y);
+    line(pt2X, pt2Y, pt6X, pt6Y);  
+    line(pt3X, pt3Y, pt7X, pt7Y);  
+    box2Text();
+    button2();
+  }
 }

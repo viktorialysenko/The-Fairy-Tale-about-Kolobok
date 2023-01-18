@@ -6,5 +6,10 @@ void imagePopulation() {
   backgroundImage9= loadImage("../Images/p9.jpg");
   rabbit= loadImage("../Images/rabbit.png");
   music=loadImage("../Images/music.png");
+  backgroundImage7=loadImage("../Images/p7.jpg");
+  bear=loadImage("../Images/bear.png");
+  wolf=loadImage("../Images/wolf.png");
+  backgroundImage1= loadImage("../Images/background1.jpg");
+   pic1= loadImage("../Images/pic1.png");
 }//End imagePopulation program
 //End Images SubProgram

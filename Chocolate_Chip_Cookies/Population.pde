@@ -44,7 +44,15 @@ void population() {
   button9Y=pt16Y-nextButtonHeight;
   button8X=pt15X-nextButtonWidth;
   button8Y=pt15Y-nextButtonHeight;
-
+  button7X=pt14X-nextButtonWidth;
+  button7Y=pt14Y-nextButtonHeight;
+  button4X=pt10X-nextButtonWidth;
+  button4Y=pt10Y-nextButtonHeight;
+  button1X= pt6X-nextButtonWidth;
+  button1Y=pt6Y-nextButtonHeight;
+  button2X= pt7X-nextButtonWidth;
+  button2Y=pt7Y-nextButtonHeight;
+ 
  //
  //Kolobok
 kolobok6Y=pt7Y+1/5.4*rectHeight;
@@ -55,6 +63,15 @@ kolobok8Y=pt10Y+1/5.4*rectHeight;
 //rabbit
 rabbitX=pt10X+rectWidth*1/1.8;
 rabbitY=pt10Y+rectHeight*1/2.7;
+ kolobok7X= pt9X-rectWidth*1/4;
+ kolobok7Y= pt9Y+1/5.4*rectHeight;
+ bearX=pt9X+rectWidth*1/1.8;
+ bearY=pt9Y+rectHeight*1/2.3;
+ wolfX=pt9X+rectWidth*1/3.7;
+ wolfY=pt9Y+rectHeight*1/4;
+ kolobok1X= pt1X;
+ kolobok1Y= pt1Y;
+
 
 
 

@@ -6,6 +6,7 @@ float ptDiameter, rectWidth, rectHeight;
 float pt1X, pt1Y, pt2X, pt2Y, pt3X, pt3Y, pt4X, pt4Y, pt5X, pt5Y, pt6X, pt6Y, pt7X, pt7Y, pt8X, pt8Y;
 float pt9X, pt9Y, pt10X, pt10Y, pt11X, pt11Y, pt12X, pt12Y, pt13X, pt13Y, pt14X, pt14Y, pt15X, pt15Y, pt16X, pt16Y;
 float kolobok6X, kolobok6Y, kolobok8X, kolobok8Y, rabbitX, rabbitY;
+float kolobok7X, kolobok7Y, bearX, bearY, wolfX, wolfY, kolobok1X ,kolobok1Y;
 int tintDayMode=255, tintDayModeOpacity=50;
 int tintRed=255, tintGreen=255, tintBlue=255, tintModeOpacity=140;
 /* Home Screen Expectations
@@ -32,16 +33,16 @@ void homeScreen() {
   fill(white);
   //Boxes
   if ( nightMode==true ) {
-   tint(110, 110, 89, 117); }else { tint(tintRed, tintGreen, tintBlue, tintModeOpacity);};
+   tint(110, 110, 89, 180); }else { tint(tintRed, tintGreen, tintBlue, tintModeOpacity);};
     box5(); 
     box3();
     box6();
     box9();
-     box8();/*
+     box8();
      box7();
      box4();
      box1();
-     box2();*/
+     box2();
     //quitButtonHoverOver();
   }//End HomeScreen
   //

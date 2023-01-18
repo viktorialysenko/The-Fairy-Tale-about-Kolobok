@@ -1,6 +1,6 @@
 float startButtonX, startButtonY, button1Width, button1Height;
 float restartButtonX, restartButtonY, nightModeButtonX, nightModeButtonY, button3X, button3Y, nextButtonWidth, nextButtonHeight ;
-float button9X, button9Y, button8X, button8Y;
+float button9X, button9Y, button8X, button8Y, button7X,button7Y, button4X, button4Y, button1X, button1Y, button2X, button2Y;
 float button6X, button6Y;
 color black=#000000, gray=#ADADAD, salad=#E7FAB1;
 void startButton() {
@@ -110,3 +110,62 @@ void button8() {
   }
   fill(white);
 }
+
+void button7() {
+  rect(button7X, button7Y, nextButtonWidth, nextButtonHeight);
+  if ( mouseX>=button7X && mouseX<=button7X+button1Width && mouseY>=button7Y && mouseY<=button7Y+button1Height) {
+    fill(salad);
+    rect(button7X, button7Y, nextButtonWidth, nextButtonHeight);
+    buttonText7();
+  } else {
+    stroke(gray);
+    fill(white);
+    rect(button7X, button7Y, nextButtonWidth, nextButtonHeight);
+    stroke(black);
+  buttonText7();
+  }
+  fill(white);
+}
+  void button4() {
+  rect(button4X, button4Y, nextButtonWidth, nextButtonHeight);
+  if ( mouseX>=button4X && mouseX<=button4X+button1Width && mouseY>=button4Y && mouseY<=button4Y+button1Height) {
+    fill(salad);
+    rect(button4X, button4Y, nextButtonWidth, nextButtonHeight);
+    buttonText4();
+  } else {
+    stroke(gray);
+    fill(white);
+    rect(button4X, button4Y, nextButtonWidth, nextButtonHeight);
+    stroke(black);
+  buttonText4();
+  }
+  fill(white);}
+  
+   void button1() {
+  rect(button1X, button1Y, nextButtonWidth, nextButtonHeight);
+  if ( mouseX>=button1X && mouseX<=button1X+button1Width && mouseY>=button1Y && mouseY<=button1Y+button1Height) {
+    fill(salad);
+    rect(button1X, button1Y, nextButtonWidth, nextButtonHeight);
+    buttonText1();
+  } else {
+    stroke(gray);
+    fill(white);
+    rect(button1X, button1Y, nextButtonWidth, nextButtonHeight);
+    stroke(black);
+  buttonText1();
+  }
+  fill(white);} 
+  void button2() {
+  rect(button2X, button2Y, nextButtonWidth, nextButtonHeight);
+  if ( mouseX>=button2X && mouseX<=button2X+button1Width && mouseY>=button2Y && mouseY<=button2Y+button1Height) {
+    fill(salad);
+    rect(button2X, button2Y, nextButtonWidth, nextButtonHeight);
+    buttonText1();
+  } else {
+    stroke(gray);
+    fill(white);
+    rect(button2X, button2Y, nextButtonWidth, nextButtonHeight);
+    stroke(black);
+  buttonText2();
+  }
+  fill(white);}
