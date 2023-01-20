@@ -146,6 +146,17 @@ void mousePressed() {
       abox1.play();
     }
   }//End Play Pause STop Button
+    //box1
+  if (mouseX>=pt6X && mouseX<=pt6X+audioWidth && mouseY>=audio2Y && mouseY<=audio2Y+audioHeight)  {
+    if ( abox2.isPlaying() ) {
+      abox2.pause();
+    } else if ( abox2.position() >= abox2.length()-abox2.length()*1/5 ) {
+      abox2.rewind();
+      abox2.play();
+    } else {
+      abox2.play();
+    }
+  }//End Play Pause STop Button
   
   if (mouseX>=button3X && mouseX<=button3X+nextButtonWidth && mouseY>=button3Y && mouseY<=button3Y+nextButtonHeight) box6 = true; 
   if (mouseX>=button6X && mouseX<=button6X+nextButtonWidth && mouseY>=button6Y && mouseY<=button6Y+nextButtonHeight) box9 = true;
